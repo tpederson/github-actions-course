@@ -7,11 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '20'
+      # checkout the code
       - name: Checkout Code
-        run: echo "Checking out the code"
+        uses: actions/checkout@v4
       - name: Printing Folders
         run: ls -d */
