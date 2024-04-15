@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run unit tests
-        if: ${{ !github.event.inputs.pass-unit-tests }}
+        if: ${{ !inputs.pass-unit-tests }}
         run: |
           echo "Running unit tests..."
           exit 1
