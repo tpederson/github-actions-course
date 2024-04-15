@@ -23,4 +23,5 @@ jobs:
         if: ${{ cancelled() }}
         run: echo "I will print if any prvious steps fail"
       - name: Sleep for 20 seconds
+        if: ${{ always() }}
         run: sleep 20
