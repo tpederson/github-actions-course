@@ -28,9 +28,7 @@ jobs:
     needs: [lint-build, unit-tests]
     steps:
       - name: Deploy to non-prod
-        if: ${{ !github.event.inputs.pass-unit-tests }}
-        run: |
-          echo "Deploying to nonprod..."
+        run: echo "Deploying to nonprod..."
 
   e2e-tests:
     runs-on: ubuntu-latest
