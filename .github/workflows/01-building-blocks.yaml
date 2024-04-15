@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo Hello
-        run: echo "Hello, world!"
+        run: echo "asdfasfd ${{github.event.pull_request.title}}" }}"
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
