@@ -43,5 +43,7 @@ jobs:
         with:
           name: app
           path: 14-artifacts/build
+      - name: Show folder structure
+        run: ls -R
       - name: Deploy
         run: echo "Deploying..."
